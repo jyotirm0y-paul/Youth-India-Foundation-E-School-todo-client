@@ -12,7 +12,7 @@ const EditTodo = () => {
       .then(res => res.json())
       .then(data => setToDos(data))
       
-  }, [])
+  }, [toDos])
 
   const update = toDos?.find(x => x._id === params.id);
 

@@ -24,7 +24,10 @@ const TodoList = () => {
     fetch('https://tranquil-dusk-65346.herokuapp.com/todos')
       .then(res => res.json())
       .then(data => setToDos(data))
-  }, [deleteId])
+  }, [toDos])
+  // const reload = () =>{
+  //   toDos.filter(pd => pd._id !== id )
+  // }
   return (
     <div className="container">
       <div className="mt-3">
